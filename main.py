@@ -1,0 +1,25 @@
+from radio import Radio
+from smart_speaker import SmartSpeaker
+from car_radio import CarRadio
+
+radio = Radio("Sony", "20", "black", "2", "Rihanna", "cable")
+print("Radio " + "#" * 20)
+radio.play_song()
+radio.say_connection_type()
+radio.introduce_myself()
+print()
+smart_speaker = SmartSpeaker(1000, "Sony", "20", "black", "2", "Rihanna", "wifi")
+print("SmartSpeaker " + "#"*13, '\n')
+print("introduce_myself:")
+smart_speaker.introduce_myself()
+print()
+print("say_connection_type:")
+smart_speaker.say_connection_type()
+print()
+print("memory_upgrade:")
+smart_speaker.memory_upgrade(1024)
+print()
+print("CarRadio" + "#"*18, '\n')
+car_radio = CarRadio("Blaha", "Sony", "20", "black", "2", "Rihanna", "cable")
+print("navigate")
+car_radio.navigate("oktogon")
