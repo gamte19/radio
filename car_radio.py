@@ -9,4 +9,4 @@ class CarRadio(Radio):
 
     def navigate(self, destination):
         print("your position is " + self.position)
-        print(str(random.randint(0, 10)) + " km far from " + destination)
+        print("You are " + str(random.randint(0, 10)) + " km far from " + destination)
