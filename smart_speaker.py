@@ -7,6 +7,6 @@ class SmartSpeaker(Radio):
         super().__init__(*args)
 
     def memory_upgrade(self, upgrade):
-        upgraded_memory = self.memory + upgrade
         print("My old storage size is " + str(self.memory))
-        print("My current storage size is " + str(upgraded_memory))
+        self.memory = self.memory + upgrade
+        print("My current storage size is " + str(self.memory))
